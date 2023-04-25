@@ -1,0 +1,58 @@
+:root {
+  --color-white: #e8e3e3;
+  --color-black: #000;
+  --color-yellow: #ffff00;
+  --color-dark-grey: #10100e;
+  --color-blue: #6a83fb;
+  --color-violet: #ae72c2;
+
+  --border-radius-small: 3px;
+
+  --spacing-small: 10px;
+  --spacing-medium: 20px;
+  --spacing-large: 30px;
+
+  --font-size-main: 16px;
+  --font-size-subheader: 18px;
+  --font-size-header: 26px;
+
+  --width-max: 1200px;
+
+  --font-family-main: sans-serif;
+  --font-bold: 600;
+  --transition: 0.4s;
+
+  --text-shadow-yellow: 0 0 2px var(--color-white), 0 0 40px var(--color-yellow);
+  --text-shadow-blue: 0 0 2px var(--color-white), 0 0 40px var(--color-blue);
+
+  --theme-default-bgimage: url(@static/01.jpg);
+  --theme-default-header: #cccc46;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: var(--font-family-main);
+  background-color: var(--color-dark-grey);
+  font-size: var(--font-size-main);
+  background-image: var(--theme-default-bgimage);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.header__text {
+  line-height: 1.7;
+  font-size: var(--font-size-header);
+  text-shadow: 0 0 2px var(--color-black);
+  color: var(--theme-default-header);
+  transition: color var(--transition);
+}
+li > a.active {
+  border: 2px solid var(--color-violet);
+  color: var(--color-violet);
+  text-shadow: none;
+}
