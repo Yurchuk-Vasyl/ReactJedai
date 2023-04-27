@@ -20,7 +20,11 @@ const FavoriteCounterIcon = () => {
     <div className={styles.favorite__container}>
       <Link to="/favorites">
         <span className={styles.counter}>{count}</span>
-        <img src={markIcon} className={styles.mark__icon}></img>
+        <img
+          src={markIcon}
+          className={styles.mark__icon}
+          alt="favorite icon"
+        ></img>
       </Link>
     </div>
   );
