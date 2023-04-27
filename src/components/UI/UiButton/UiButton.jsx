@@ -21,7 +21,7 @@ UiButton.propTypes = {
   disabled: PropTypes.bool,
   children: PropTypes.string,
   theme: PropTypes.string,
-  classes: PropTypes.string,
+  //classes: PropTypes.string,
 };
 
 export default UiButton;
