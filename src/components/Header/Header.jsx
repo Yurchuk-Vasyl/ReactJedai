@@ -20,8 +20,11 @@ import neitral from './img/neitral.svg';
 import styles from './Header.module.css';
 
 const Header = () => {
-  const [icon, setIcon] = useState(getLocalStorage('theme') || neitral);
-  console.log(getLocalStorage('theme'));
+  const [icon, setIcon] = useState(
+    typeof getLocalStorage('theme') == 'string'
+      ? getLocalStorage('theme')
+      : neitral
+  );
 
   const isTheme = useTheme().theme;
 
