@@ -20,7 +20,8 @@ import neitral from './img/neitral.svg';
 import styles from './Header.module.css';
 
 const Header = () => {
-  const [icon, setIcon] = useState(getLocalStorage('theme'));
+  const [icon, setIcon] = useState(getLocalStorage('theme') && neitral);
+  console.log(getLocalStorage('theme'));
 
   const isTheme = useTheme().theme;
 
@@ -42,13 +43,13 @@ const Header = () => {
       <ul className={styles.nav__container}>
         <li>
           <div>
-            <NavLink to="/">
+            <NavLink to="/ReactJedai">
               <img className={styles.icon} src={icon} alt="star wars"></img>
             </NavLink>
           </div>
         </li>
         <li>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/ReactJedai">Home</NavLink>
         </li>
         <li>
           <NavLink to="/people/?page=1">People</NavLink>

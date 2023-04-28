@@ -8,7 +8,7 @@ import ErrorMessage from '@components/ErrorMessage/ErrorMessage';
 
 const routesConfig = [
   {
-    path: '/',
+    path: '/ReactJedai',
     component: <HomePage />,
   },
   {
