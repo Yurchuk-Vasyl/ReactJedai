@@ -11,7 +11,7 @@ export const THEME_NEITRAL = 'neitral';
 const ThemeContext = React.createContext();
 
 export const ThemeProvider = ({ children, ...props }) => {
-  const [theme, setTheme] = useState(getLocalStorage('theme') && THEME_NEITRAL);
+  const [theme, setTheme] = useState(getLocalStorage('theme') || THEME_NEITRAL);
   // const [localtTheme, setLocalTheme] = useState(THEME_NEITRAL);
   changeCSSVariables(theme);
 
